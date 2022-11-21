@@ -25,7 +25,7 @@ In both cases, the goal is a four-element array specifying the desired position 
 Note that goals represent *absolute position*, rather than a displacement.
 Hence, specifying an incremental motion for a single joint depends on the current position.
 
-**Advantages:** Simple. Does not require any extra configuration or starting additional ROS nodes. 
+**Advantages:** Simple. Does not require any extra configuration or starting additional ROS nodes.
 
 **Disadvantages:** No self-collision checking, kinematic singularity avoidance or joint limits enforcement. No parameterization by timing; sequential positions must be published manually.
 
@@ -86,6 +86,26 @@ Trajectories have the advantage of specifying sequential robot motion.
 For instance, a large motion to a position or pose goal can be generated, which will avoid self-collisions without requiring each intermediate joint position command to be manually specified.
 
 For more details, check out the [Move Group Python Interface tutorial](https://ros-planning.github.io/moveit_tutorials/doc/move_group_python_interface/move_group_python_interface_tutorial.html).
+The [shutter_moveit_config package](https://shutter-ros.readthedocs.io/en/latest/packages/shutter_moveit_config.html) contains an example using MoveIt that is heavily adapted from the Move Group Python Interface tutorial.
+The example can be executed with the following command:
+
+```bash
+$ roslaunch shutter_moveit_config python_interface_tutorial.launch moveit_controller_manager:=[fake | simple | ros_control]
+```
+
+The argument ``moveit_controller_manager`` specifies the robot platform to execute.
+``fake`` is the default and simulates the robot entirely within RViz.
+``simple`` expects the standalone Unity-built simulation for Shutter.
+``ros_control`` expects the real robot.
+
+The example uses MoveIt to plan and execute trajectories in three different ways: joint goals, pose goals and Cartesian goals.
+Joint position goals are generally the easiest style of specifying goal states for Shutter.
+Cartesian path planning is particularly difficult, owing to the low degrees of freedom available to Shutter.
+
+By default, the example uses Shutter's [IKFast inverse kinematics solver](https://gitlab.com/interactive-machines/shutter/shutter-ros/-/tree/master/shutter_ikfast_plugin) and the OMPL implementation of [BFMT\* motion planner](https://ompl.kavrakilab.org/classompl_1_1geometric_1_1BFMT.html).
+MoveIt is a modular library, so different IK solvers and planners can be specified.
+Not all combinations of planners and solvers will be equally successful or applicable to a given scenario.
+For example, CHOMP only supports joint goals, and TRAC-IK often fails to find continuous pose sequences for Cartesian path planning.
 
 Note that Shutter's behavior tree interface to MoveIt uses a C++ interface instead of the Python interface, so there are fewer examples in the Interactive Machines Group codebase.
 However, MoveIt is a widely used motion planning library in both academia and industry, so there is a broader ecosystem of documentation and tutorials available.
