@@ -126,7 +126,7 @@ Right Hand Rule (image from Wikipedia.org)
 
 A kinematic chain is an assembly of rigid bodies or `links` connected by `joints`.
 The joints allow the links to move relative to one another
-and are typically instrumented with sensors, e.g., to measure the relative position of neihboring links.
+and are typically instrumented with sensors, e.g., to measure the relative position of neighboring links.
 
 There are different types of joints but, in this assignment, we will focus on
 working with `revolute joints` because Shutter has 4 of them. Revolute joints
