@@ -41,7 +41,7 @@ help you create your ROS workspace and create your Git assignment repository.
 #### Background Knowledge
 
 This assignment assumes that you are familiar with
-the `roscore`, `roslaunch`, `rostopic`, `rqt_graph`, and `rviz` tools (explained in ). You
+the `roscore`, `roslaunch`, `rostopic`, `rqt_graph`, and `rviz` tools (explained in [SETUP0..md](../SETUP0_ROSWorkspace.md)). You
 should also know how to control the position of Shutter's joints one at a time in simulation. If
 you are unfamiliar with any of these tools, programs, or procedures, please revisit Part II of [SETUP2..md](../SETUP2_ROSWorkspace.md).
 
