@@ -82,10 +82,10 @@ in your home directory. Follow the steps in this tutorial:
     ```bash
     $ cd ~/catkin_ws/src
     $ ls -C1 shutter-ros
-    arbotix_ros
     documentation
     shutter_bringup
     shutter_description
+    shutter_face_ros
     (...)
     ```
     
@@ -231,7 +231,7 @@ with [roslaunch](http://wiki.ros.org/roslaunch).
      
     4. It will set up the [MoveIt](https://moveit.ros.org/) motion planning pipeline for the robot.
 
-    5. It will launch [RViz]() as an interface for you to send
+    5. It will launch [RViz](http://wiki.ros.org/rviz) as an interface for you to send
     motion commands to the robot. 
 
 3. Try commanding the robot in RViz. If all is set up properly, then you should see the robot moving in Unity.
@@ -275,7 +275,7 @@ of the 4 joints in the robot as follows:
 
     <img src="images/shutter_links.png"/>
 
-    To get this visualizaiton, add a [tf Display](http://wiki.ros.org/rviz/DisplayTypes/TF) in RViz
+    To get this visualization, add a [tf Display](http://wiki.ros.org/rviz/DisplayTypes/TF) in RViz
     and then select the corresponding frames in the tf/Frames submenu on the left panel. If the MoveIt visualization handles are distracting or occluding tf, 
     you can turn them off by deselecting "MotionPlanning" in the left panel of RViz.
 
@@ -310,14 +310,13 @@ exchange information between nodes.
 
     <img src="images/rqt_graph.png" />
 
-    The nodes in the picture above are:
+    The nodes in the picture above include:
     
     - /move_group
     - /robot_state_publisher
     - /rosout
     - /rqt_gui_py_node_XXXXX
-    - /rviz_gradient_...
-    - /server_endpoint
+    - /rviz_...
     - /unity_simulation
     - /unity_trajectory_controller
     <br/>
@@ -342,8 +341,7 @@ exchange information between nodes.
     messages to the /rosout topic. Thus, you should see a directed edge in the graph from
     each of these nodes to the /rosout topic. Meanwhile, the 
     node [/rosout](http://wiki.ros.org/rosout#rosapi) subscribes to the /rosout topic. This is 
-    illustrated in the graph with an edge that goes in the opposite direction: 
-    from the /rosout topic to the /rosout node.
+    illustrated in the graph with an edge that goes from the /rosout topic to the /rosout node.
     
     > The node [rosout](http://wiki.ros.org/rosout) implements a system-wide logging mechanism for messages
     sent to the /rosout topic. The /rosout node subscribes to the /rosout topic to record
