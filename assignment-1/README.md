@@ -63,8 +63,7 @@ the code for this assignment. The report is a fillable PDF which is available [h
  or [Box](https://yale.account.box.com) -- you should ensure that the teaching staff can access your ROS bags.
 
 - **Code:** Finally, you are expected to push code for this assignment to your 
-[GitHub](http://www.github.com) repository as explained for the  
-the [first assignment](https://github.com/Yale-BIM/f20-assignments/tree/master/assignment-1). You should submit your final code via Gradescope for evaluation.
+[GitHub](http://www.github.com) repository as explained in [SETUP1..md](../SETUP1_GitAssignmentRepo.md). You should submit your final code via Gradescope for evaluation.
 
 #### Evaluation
 
