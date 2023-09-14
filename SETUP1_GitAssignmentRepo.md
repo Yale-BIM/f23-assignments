@@ -58,19 +58,19 @@ to generate a new SSH key in your machine and [upload your public key](https://d
     ```
 
 6. Create a `new remote called upstream` that points to the 
-[assignments repository](https://github.com/Yale-BIM/f22-assignments.git)
+[assignments repository](https://github.com/Yale-BIM/f23-assignments.git)
 which contains the set of assignments and starter code.
 
     ```bash
     # Example
-    $ git remote add upstream https://github.com/Yale-BIM/f22-assignments.git
+    $ git remote add upstream https://github.com/Yale-BIM/f23-assignments.git
     ```
 
     > NOTE: A Git remote is a pair of alias and URL (link) to another Git repository.
     > By default, your freshly cloned local repository will have a remote named 
     > origin that points to your online Git repository in GitHub. 
     > The example above tells your local Git repository to track another remote Git 
-    > repository located at `https://github.com/Yale-BIM/f22-assignments.git`
+    > repository located at `https://github.com/Yale-BIM/f23-assignments.git`
     > and name it as upstream.
     
 7. Get the latest `commits from upstream` and merge them into your own local repository.
@@ -114,7 +114,7 @@ Once your repository is setup, you will need to follow the steps below when work
 	If a merge conflict happens, always use latest
 	commit from upstream. Your work is safe as long you commit and push 
 	your code to GitHub regularly and only work on the assignments once they are 
-    officially "out" per the course [schedule](https://cpsc459-bim.gitlab.io/f22/schedule/). 
+    officially "out" per the course [schedule](https://cpsc459-bim.gitlab.io/f23/schedule/). 
 	
 	Once you have resolved any merge conflicts and all commits from
 	upstream are merged successfully to your own master branch, push it 
