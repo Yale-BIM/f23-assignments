@@ -96,7 +96,7 @@ Settings -> Danger Zone.
 
 9. Add the course instructor and the T.F.(s) as members of your GitHub repository in Settings -> Collaborators and teams. In the Manage access section, choose "Add people", and add the Yale usernames for the instructor and teaching fellow(s).
 
-	> The instructor's email is `marynel.vazquez _at_ yale.edu`, and the teaching fellows' emails are `a.lew _at_ yale.edu` with `_at_` meaning `@`.
+	> The instructor's email is `marynel.vazquez _at_ yale.edu`, and the teaching fellows' emails are `nathan.tsoi _at_ yale.edu` with `_at_` meaning `@`.
 
 10. Once you have finished setting up your repository, fill and submit this [Repository Record Form](https://forms.gle/DxpY66Mpb6eoqBgD6). Your response will be used to check that your repository exists, has been setup properly, and that the instructor and T.F.(s) have access to it.
 
