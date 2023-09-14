@@ -15,7 +15,7 @@ sudo apt install ros-noetic-cv-bridge python3-cv-bridge
 sudo apt install python3-vcstool
 sudo apt install python-is-python3
 sudo apt install python3-tk 
-ros-noetic-pr2-description
+sudo apt install ros-noetic-pr2-description ros-noetic-ruckig 
 
 # setup your environment so that you can find ros commands
 echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
