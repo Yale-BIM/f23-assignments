@@ -1,6 +1,6 @@
-# CPSC-459/559 Fall 2022. Assignments
+# CPSC-459/559 Fall 2023. Assignments
 
-Assignment repository for Yale's [CPSC-459/559 Building Interactive Machines](https://cpsc459-bim.gitlab.io/f22/) (Fall 2022).
+Assignment repository for Yale's [CPSC-459/559 Building Interactive Machines](https://cpsc459-bim.gitlab.io/f23/) (Fall 2023).
 
 ## General Instructions
 
