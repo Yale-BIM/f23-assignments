@@ -439,7 +439,7 @@ given the increased complexity of this node in comparison previous examples. For
     visually matches the position of the moving target (red ball). If the frame and the moving
     object are not displayed in the same place, check your code and edit as necessary.
     
-    - Run public tests for this part of this assignment to ensure that your node is operating as expected:
+    - Stop all running nodes and run public tests for this part of this assignment to ensure that your node is operating as expected:
     
         ```bash
         $ rostest shutter_lookat_public_tests test_publish_target.launch
