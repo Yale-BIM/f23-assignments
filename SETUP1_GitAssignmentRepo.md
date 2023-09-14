@@ -98,7 +98,7 @@ Settings -> Danger Zone.
 
 	> The instructor's email is `marynel.vazquez _at_ yale.edu`, and the teaching fellows' emails are `nathan.tsoi _at_ yale.edu` with `_at_` meaning `@`.
 
-10. Once you have finished setting up your repository, fill and submit this [Repository Record Form](https://forms.gle/DxpY66Mpb6eoqBgD6). Your response will be used to check that your repository exists, has been setup properly, and that the instructor and T.F.(s) have access to it.
+10. Once you have finished setting up your repository, fill and submit this [Repository Record Form](https://forms.gle/Fxa3TrF4QNM45sAc9). Your response will be used to check that your repository exists, has been setup properly, and that the instructor and T.F.(s) have access to it.
 
 ## Part II. Working on your assignment
 
