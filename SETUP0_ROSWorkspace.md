@@ -236,7 +236,7 @@ with [roslaunch](http://wiki.ros.org/roslaunch).
 
 3. Try commanding the robot in RViz. If all is set up properly, then you should see the robot moving in Unity.
 
-    <img src="images/shutter_unity.gif"/>
+    <img src="https://github.com/Yale-BIM/f23-assignments/blob/master/images/shutter_unity.gif"/>
 
     The gif above shows how the robot could be moving on your computer. To send commands from RViz:
 
@@ -273,7 +273,7 @@ of the 4 joints in the robot as follows:
 
 5. Visualize the main coordinate frames of the robot's arm in RViz, as shown in the image below:
 
-    <img src="images/shutter_links.png"/>
+    <img src="https://github.com/Yale-BIM/f23-assignments/blob/master/images/shutter_links.png"/>
 
     To get this visualization, add a [tf Display](http://wiki.ros.org/rviz/DisplayTypes/TF) in RViz
     and then select the corresponding frames in the tf/Frames submenu on the left panel. If the MoveIt visualization handles are distracting or occluding tf, 
@@ -308,7 +308,7 @@ exchange information between nodes.
     under "Hide", and select "Nodes/Topics(all)" to visualize all of the nodes that are sharing information
     in the graph. You should see a total of 8 `ROS nodes` (displayed as ellipses) in the graph: 
 
-    <img src="images/rqt_graph.png" />
+    <img src="https://github.com/Yale-BIM/f23-assignments/blob/master/images/rqt_graph.png" />
 
     The nodes in the picture above include:
     
