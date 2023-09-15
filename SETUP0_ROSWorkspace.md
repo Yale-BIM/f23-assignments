@@ -347,4 +347,26 @@ exchange information between nodes.
     sent to the /rosout topic. The /rosout node subscribes to the /rosout topic to record
     the messages into a log file.
     
+
+## Optinal Part III - Test out Shutter's Simulation with Eyes
+
+Go to the `shutter-ros` folder inside of your workspace `src` directory. Then, install the included xvfbwrapper package:
+
+   ```bash
+   $ cd modules/xvfbwrapper
+   $ pip install . --user
+   ```
+
+Now, you should be able to test out the simulation with shutter eyes:
+
+   ```bash
+   $ roslaunch shutter_bringup shutter_with_face.launch simulation:=true
+   ```
+
+And you should be able to even change the expression of the robot by running in another terminal:
+
+   ```bash
+   $ rostopic pub -1 /gaze/expression_index std_msgs/String "data: 'happy'"
+   ```
+
 At this point, please continue setting up your assignment repository as in the [SETUP1_GitAssignmentRepo.md](SETUP1_GitAssignmentRepo.md) instructions.
