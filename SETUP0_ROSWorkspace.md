@@ -348,7 +348,7 @@ exchange information between nodes.
     the messages into a log file.
     
 
-## Optinal Part III - Test out Shutter's Simulation with Eyes
+## Optional Part III - Test out Shutter's Simulation with Eyes
 
 Go to the `shutter-ros` folder inside of your workspace `src` directory. Then, install the included xvfbwrapper package:
 
