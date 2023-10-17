@@ -155,11 +155,11 @@ by running the following commands on a Python shell:
 
 ```python
 >> import tensorflow as tf
->> tf.test.is_gpu_available()
+>> tf.config.list_physical_devices('GPU')
 ```
 
-The function should return True if TensorFlow can access your GPU. If the function
-returns False, check the errors that are printed in the shell. Common errors include
+The function should return a list with available GPUs. If the function
+returns an empty list, check the errors that are printed in the shell. Common errors include
 not having Cuda 11.2 installed in the system but a different version, not having CuDNN
 installed for Cuda 11.2, and not having CUDA system variables setup in your linux environment.
 For instance, important CUDA system variables that should generally be in your `.bashrc` include:
