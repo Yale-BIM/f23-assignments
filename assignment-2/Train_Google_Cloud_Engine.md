@@ -45,8 +45,7 @@ following specifications:
 4. You should then be able to connect to your virtual machine over SSH on your browser.
 
     > To connect directly through a shell in your local machine, you will need to install the
-    [gcloud sdk](https://cloud.google.com/sdk/gcloud/) and follow [these instructions](https://cloud.google.com/compute/docs/instances/connecting-to-instance)
-    (see the section on "Connecting using the command line interface").
+    [gcloud sdk](https://cloud.google.com/sdk/gcloud/) and follow [these instructions](https://cloud.google.com/compute/docs/instances/connecting-to-instance).
 
 
 ## Working With Your VM in Google Cloud
