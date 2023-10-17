@@ -40,7 +40,7 @@ following specifications:
     - **Boot disk type:** SSD persistent disk (50 GB)
     - **Firewall**: Select "Allow HTTP traffic" and "Allow HTTPS traffic"
 
-    > The [cost](https://cloud.google.com/products/calculator) for such a virtual machine should be around $0.5 per hour.
+    > The [cost](https://cloud.google.com/products/calculator) for such a virtual machine should be around $17 in a month (for using it 2h a day, 7 days a week).
     
 4. You should then be able to connect to your virtual machine over SSH on your browser.
 
