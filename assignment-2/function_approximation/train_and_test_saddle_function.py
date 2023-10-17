@@ -94,7 +94,7 @@ def train_model(model, train_input, train_target, val_input, val_target, input_m
     norm_val_input = normalize_data_per_row(val_input, input_mean, input_stdev)
 
     # compile the model: define optimizer, loss, and metrics
-    model.compile(optimizer=tf.keras.optimizers.Adam(lr=learning_rate),
+    model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=learning_rate),
                  loss='mse',
                  metrics=['mae'])
 
