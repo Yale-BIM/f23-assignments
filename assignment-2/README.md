@@ -416,7 +416,7 @@ To make it easy for you to run the expert and see it in action, this assignment 
 $ roslaunch shutter_behavior_cloning collect_data.launch
 ```
 
-Then, you should see the robot in RViz following the blue targets as below:
+Then, you should be able to see the robot in RViz following the blue targets as below:
 <img src="docs/follow_blue_target.gif" width="600"/>
 
 The above launch file can also be used to generate data for behavioral cloning:
