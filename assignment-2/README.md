@@ -160,8 +160,8 @@ by running the following commands on a Python shell:
 
 The function should return a list with available GPUs. If the function
 returns an empty list, check the errors that are printed in the shell. Common errors include
-not having Cuda 11.2 installed in the system but a different version, not having CuDNN
-installed for Cuda 11.2, and not having CUDA system variables setup in your linux environment.
+not having Cuda 11.8 installed in the system but a different version, not having CuDNN
+installed for Cuda 11.8, and not having CUDA system variables setup in your linux environment.
 For instance, important CUDA system variables that should generally be in your `.bashrc` include:
 
 ```bash
