@@ -29,7 +29,7 @@ $ sudo apt install ros-noetic-cv-bridge python3-cv-bridge
 $ sudo apt install python3-vcstool
 $ sudo apt install python-is-python3
 $ sudo apt install python3-tk
-$ sudo apt install python-yaml python-is-python3
+$ sudo apt install python-yaml
 ```
 
 Then, install Python dependencies:
