@@ -137,14 +137,14 @@ $ catkin_make -DCMAKE_BUILD_TYPE=Release
 ```
 
 The above `install_python_deps.sh` script will install several Python packages
-that are required for this assignment, including TensorFlow v. 2.10.0. 
+that are required for this assignment, including TensorFlow v. 2.13.1. 
 
 You can verify your TensorFlow installation as follows:
 
 ```bash
 $ python3 -c "import tensorflow as tf; print(tf.__version__)"
 (...)
-2.10.0
+2.13.1
 ```
 
 **NOTE:** If your machine has a GPU with CUDA Compute Capability 3.5 or higher and 
