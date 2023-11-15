@@ -67,7 +67,30 @@ You can then visualize the following topics in RViz:
 
 The launch file arguments are enumerated in the [Azure Kinect ROS Driver usage document](https://github.com/microsoft/Azure_Kinect_ROS_Driver/blob/melodic/docs/usage.md#parameters)
 
+
+## Body Tracking Notes
+
 The mappings for the joints output by the body tracking SDK are enumerated in the [Microsoft Kinect documentation](https://learn.microsoft.com/en-us/azure/kinect-dk/body-joints).
+
+Joints are published as a `visualization_msgs/MarkerArray` message on the topic `/body_tracking_data`.
+Note that the `MarkerArray` message is a flat array (list) of 32 x *n* markers, where *n* is the number of people detected by the sensor.
+There are two important fields within each marker:
+
+1. The `marker.id` which contains the tracked body ID and the joint index.
+   The marker ID is calculated by the formula: `body_id * 100 + joint_index`.
+   Hence, to derive the body ID, use `math.floor(marker.id / 100)`, and to derive the joint index, use `marker.id % 100`.
+
+1. The `marker.pose` which contains the position (XYZ vector) and orientation (XYZW quaternion) of the marker.
+   Note that the pose by default is expressed in the `depth_camera_link` coordinate frame.
+
+The depth mode should be set to `NFOV_UNBINNED` or `WFOV_2X2BINNED` for the best joint inference.
+
+In order to reason about the body tracking data relative to the robot, you will need to add the Kinect sensor to the robot's `tf` tree.
+Because the Kinect does not move with the robot, you can broadcast a static transform (see [writing a tf2 static broadcaster](http://wiki.ros.org/tf2/Tutorials/Writing%20a%20tf2%20static%20broadcaster%20%28Python%29)).
+Consult the course materials or course staff if you are uncertain how to add the Kinect to the `tf` tree.
+
+> **Hint:** You can sketch the transform by measuring the XYZ displacement of the Kinect sensor from the robot base.
+If you keep the Kinect orientation aligned with the robot base orientation, you can also sketch the rotation with simple increments of `PI/2` on the required axes.
 
 
 ## Troubleshooting Steps
