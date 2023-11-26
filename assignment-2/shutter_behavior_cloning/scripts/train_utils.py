@@ -18,6 +18,10 @@ import gdown
 MODEL_URL = None
 NORM_PARAMS_URL = None
 
+# Note, you must use the Google Drive URL format that is described in the readme for gdown to work.
+assert MODEL_URL.startswith("https://drive.google.com/uc?id="), "MODEL_URL must be a Google Drive URL compatible with gdown"
+if NORM_PARAMS_URL is not None:
+    assert NORM_PARAMS_URL.startswith("https://drive.google.com/uc?id="), "NORM_PARAMS_URL must be a Google Drive URL compatible with gdown"
 
 def load_data(input_file):
     """
